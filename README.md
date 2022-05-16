@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 -   Solution URL: [Github](https://github.com/Kaasfeetje/FrontendMentor-IntroSectionWithDropdownNavigation)
--   Live Site URL: [PATIENCE](https://your-live-site-url.com)
+-   Live Site URL: [Site](https://frontend-mentor-intro-section-with-dropdown.netlify.app/)
 
 ## My process
 
