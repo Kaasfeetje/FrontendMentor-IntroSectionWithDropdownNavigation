@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+:root {
+    --almost-white: hsl(0, 0%, 98%);
+    --medium-gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+
+body {
+    font-family: "Epilogue", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    color: var(--medium-gray);
+    background-color: var(--almost-white);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: cneter;
+    width: 100%;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--almost-black);
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    width: 100%;
+}
+
+.nav-item {
+    margin: 0 2rem;
+}
+
+.mobile-nav {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropdown-list {
+    position: absolute;
+    right: 0;
+    width: max-content;
+    background-color: #fff;
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.dropdown-item + .dropdown-item {
+    margin-top: 1.25rem;
+}
+
+.dropdown-item svg {
+    margin-right: 0.5rem;
+}
+
+#company-dropdown .dropdown-list {
+    left: 0;
+    right: auto;
+}
+
+.dropdown.show .dropdown-list {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown.show .dropdown-item {
+    color: var(--medium-gray);
+}
+
+.dropdown.show .dropdown-item:hover {
+    color: var(--almost-black);
+}
+
+.nav-item:hover .dropdown-title {
+    color: var(--almost-black);
+}
+
+.nav-item:hover .dropdown-title svg path {
+    stroke: var(--almost-black);
+}
+
+.nav-item:hover {
+    color: var(--almost-black);
+    cursor: pointer;
+}
+
+.btn {
+    color: var(--medium-gray);
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+}
+
+.btn-rounded,
+.btn-full {
+    border: 2px solid var(--medium-gray);
+    border-radius: 1em;
+}
+
+.btn-full {
+    background-color: var(--almost-black);
+    color: var(--almost-white);
+    border: 2px solid var(--almost-black);
+}
+
+.btn:hover {
+    color: var(--almost-black);
+    border-color: var(--almost-black);
+}
+
+.btn-full:hover {
+    background-color: var(--almost-white);
+}
+
+.nav-actions {
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.nav-actions .btn + .btn {
+    margin-left: 1em;
+}
+
+.hero {
+    margin-left: 8em;
+    margin-right: 6em;
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.desktop-hero-image {
+    height: 75vh;
+}
+.mobile-hero-image {
+    display: none;
+}
+
+.cta h1 {
+    color: var(--almost-black);
+    font-size: 5em;
+    margin-top: 8rem;
+    margin-bottom: 0;
+}
+
+.cta p {
+    width: 75%;
+    padding: 2em 0;
+}
+
+.cta button {
+    margin-bottom: 2em;
+}
+
+.cta .brands {
+    margin-top: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobile-head {
+    display: none;
+}
+
+.attribution {
+    text-align: center;
+    margin: 1rem;
+    margin-top: 4rem;
+}
+
+@media (max-width: 1040px) {
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+    }
+
+    .nav {
+        padding: 1rem 0;
+    }
+
+    .logo {
+        font-size: 3.5em;
+        margin-left: 1rem;
+    }
+
+    .nav-links {
+        margin: 0;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .mobile-nav.show {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-nav.show .nav-list {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 66%;
+        height: 100vh;
+        background-color: #fff;
+        overflow-y: auto;
+    }
+
+    .nav-list {
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-head {
+        display: block;
+        margin: 1rem;
+        margin-left: auto;
+        margin-bottom: 2.5rem;
+
+        stroke: var(--almost-black);
+        cursor: pointer;
+    }
+
+    .nav-item {
+        margin: 0;
+        font-size: 18px;
+        margin: 0 2rem;
+    }
+
+    .nav-item svg {
+        margin-left: 1rem;
+    }
+
+    .nav-item + .nav-item {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-actions {
+        display: flex;
+        flex-direction: column;
+        margin-right: 1rem;
+        margin-top: 2rem;
+        font-size: 18px;
+    }
+
+    .nav-actions button:first-child {
+        margin-left: 1rem;
+    }
+
+    .dropdown.show .dropdown-list {
+        display: block;
+        margin-top: 0;
+        position: static;
+        padding-left: 0rem;
+        padding-bottom: 1rem;
+    }
+
+    #company-dropdown.show .dropdown-list {
+        padding-left: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+    }
+
+    .desktop-hero-image {
+        display: none;
+    }
+
+    .mobile-hero-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .cta {
+        width: 100%;
+    }
+
+    .cta h1 {
+        font-size: 3.5em;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-top: 2rem;
+    }
+
+    .cta h1 br {
+        display: none;
+    }
+
+    .cta p {
+        font-size: 1rem;
+        margin: 0 auto;
+        padding: 1.5rem 0;
+        text-align: center;
+        width: 90%;
+    }
+
+    .cta .cta-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cta .btn {
+        font-size: 1rem;
+    }
+
+    .cta .brands {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+}
