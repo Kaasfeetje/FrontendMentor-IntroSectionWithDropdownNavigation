@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/Kaasfeetje/FrontendMentor-IntroSectionWithDropdownNavigation)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [Github](https://github.com/Kaasfeetje/FrontendMentor-IntroSectionWithDropdownNavigation)
+-   Live Site URL: [PATIENCE](https://your-live-site-url.com)
 
 ## My process
 
